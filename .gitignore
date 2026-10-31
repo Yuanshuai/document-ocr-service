@@ -18,6 +18,7 @@ test_*.jpg
 test_*.json
 models/
 offline/
+assets/*-preview.png
 *.onnx
 *.pdiparams
 *.pdmodel

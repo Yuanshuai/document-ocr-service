@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="OCR processing pipeline">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B8CFF"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0l10 5-10 5z" fill="#3B4A61"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="300" rx="24" fill="#0F141B"/>
+  <path d="M0 0h1200" stroke="url(#line)" stroke-opacity="0.55"/>
+
+  <text x="64" y="56" fill="#7C889B" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.6">PROCESSING PIPELINE</text>
+
+  <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+    <g transform="translate(64 100)">
+      <rect width="122" height="98" rx="12" fill="#141C27" stroke="#273345"/>
+      <text x="14" y="18" fill="#5B8CFF" font-size="9" font-weight="700" letter-spacing="1.4">01</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">Ingest</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">Image · PDF · Office</text>
+    </g>
+    <g transform="translate(200 100)">
+      <rect width="122" height="98" rx="12" fill="#141C27" stroke="#273345"/>
+      <text x="14" y="18" fill="#5B8CFF" font-size="9" font-weight="700" letter-spacing="1.4">02</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">Restore</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">QR · Watermark</text>
+    </g>
+    <g transform="translate(336 100)">
+      <rect width="122" height="98" rx="12" fill="#141C27" stroke="#273345"/>
+      <text x="14" y="18" fill="#5B8CFF" font-size="9" font-weight="700" letter-spacing="1.4">03</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">Orient</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">0 · 90 · 180 · 270</text>
+    </g>
+    <g transform="translate(472 100)">
+      <rect width="122" height="98" rx="12" fill="#141C27" stroke="#273345"/>
+      <text x="14" y="18" fill="#5B8CFF" font-size="9" font-weight="700" letter-spacing="1.4">04</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">De-seal</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">YOLO11</text>
+    </g>
+    <g transform="translate(608 100)">
+      <rect width="122" height="98" rx="12" fill="#141C27" stroke="#273345"/>
+      <text x="14" y="18" fill="#5B8CFF" font-size="9" font-weight="700" letter-spacing="1.4">05</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">Layout</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">DocLayout</text>
+    </g>
+    <g transform="translate(744 100)">
+      <rect width="122" height="98" rx="12" fill="#141C27" stroke="#273345"/>
+      <text x="14" y="18" fill="#5B8CFF" font-size="9" font-weight="700" letter-spacing="1.4">06</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">Tables</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">RT-DETR</text>
+    </g>
+    <g transform="translate(880 100)">
+      <rect width="122" height="98" rx="12" fill="#141C27" stroke="#273345"/>
+      <text x="14" y="18" fill="#5B8CFF" font-size="9" font-weight="700" letter-spacing="1.4">07</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">OCR</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">PP-OCRv6</text>
+    </g>
+    <g transform="translate(1016 100)">
+      <rect width="122" height="98" rx="12" fill="#101B2B" stroke="#5B8CFF" stroke-opacity="0.55"/>
+      <text x="14" y="18" fill="#22D3EE" font-size="9" font-weight="700" letter-spacing="1.4">08</text>
+      <text x="14" y="52" fill="#E5E7EB" font-size="14" font-weight="650">JSON</text>
+      <text x="14" y="76" fill="#7C889B" font-size="9">bbox + score</text>
+    </g>
+  </g>
+
+  <g stroke="#3B4A61" stroke-width="1.5" marker-end="url(#arrow)">
+    <line x1="186" y1="149" x2="198" y2="149"/>
+    <line x1="322" y1="149" x2="334" y2="149"/>
+    <line x1="458" y1="149" x2="470" y2="149"/>
+    <line x1="594" y1="149" x2="606" y2="149"/>
+    <line x1="730" y1="149" x2="742" y2="149"/>
+    <line x1="866" y1="149" x2="878" y2="149"/>
+    <line x1="1002" y1="149" x2="1014" y2="149"/>
+  </g>
+
+  <text x="64" y="252" fill="#7C889B" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12">From raw scans to coordinates, tables and searchable text.</text>
+</svg>
