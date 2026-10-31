@@ -39,15 +39,6 @@ then layout and table analysis before text recognition.
   <img src="assets/pipeline.svg" alt="Processing pipeline" width="100%">
 </p>
 
-```mermaid
-flowchart LR
-  A[Client] --> B[Flask API]
-  B --> C[Document pipeline]
-  C --> D[OCR / layout / table models]
-  C --> E[S3 / MinIO]
-  C --> F[Structured JSON]
-```
-
 ## Capabilities
 
 | Area | What it does |
